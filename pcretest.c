@@ -3707,7 +3707,7 @@ while (!done)
 
   *pp++ = 0;
   size_t psize = strlen((char *) p);
-  strncpy((char *)pbuffer, (char *)p);
+  strncpy((char *)pbuffer, (char *)p, psize);
   //strcpy((char *)pbuffer, (char *)p);
 
   /* Look for modifiers and options after the final delimiter. */
